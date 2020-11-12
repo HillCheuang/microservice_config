@@ -1,0 +1,10 @@
+<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+  <!--加入安全认证 -->
+        <dependency>
+            <groupId>com.yc.springcloud2</groupId>
+            <artifactId>microservice-security</artifactId>
+        </dependency>
+      
