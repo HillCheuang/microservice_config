@@ -9,12 +9,20 @@ server:
 spring:
   profiles: dev
   application:
-      name: microconfig-test-client
+      name: microconfig-test-client88888889999
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 101.201.145.154
 
 eureka:
  client:
   service-url:
     defaultZone: http://admin:a@localhost:7301/eureka
+info:
+  app.name: microservice-config-client-dev-updated
+  company.name: yc222
 ---
 server:
   port: 8102
@@ -22,9 +30,13 @@ server:
 spring:
   profiles: beta
   application:
-      name: microconfig-test-client
+      name: microconfig-test-client333
 
 eureka:
  client:
   service-url:
     defaultZone: http://admin:a@localhost:7301/eureka
+    
+info:
+  app.name: microservice-config-client-beta
+  company.name: hyycinfo
